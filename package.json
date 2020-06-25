@@ -1,0 +1,15 @@
+{
+  "name": "clase10-forms",
+  "version": "1.0.0",
+  "description": "Practic clase 10 formularios para r/argentina programa",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/Tenebraw/clase10-forms.git)"
+  },
+  "author": "Marcos T.",
+  "license": "ISC"
+}

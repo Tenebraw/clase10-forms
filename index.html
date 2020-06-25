@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Formularios</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel='stylesheet' type='text/css' media='screen' href='/clase10-forms/css/main.css'>
+
+    <script src='/clase10-forms/js/main.js'></script>
+</head>
+
+<body>
+    <div class="lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+    <div class="container">
+
+        <div id="content">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+                <a class="navbar-brand" href="#">Clase 10 tarea</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#/formulario">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#/ayuda">Ayuda</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+        </div>
+        <div class="container p-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card border border-dark">
+                        <div class="card-header text-center bg-secondary">
+                            <h4>Contacto</h4>
+                        </div>
+                        <div class="card-body">
+                            <form class="form">
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom01">Nombre</label>
+                                        <input type="text" class="form-control" id="validationCustom01" value="Marcos" required>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom02">Apellido</label>
+                                        <input type="text" class="form-control" id="validationCustom02" value="" required>
+
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom03">Ciudad</label>
+                                        <input type="text" class="form-control" id="validationCustom03" required>
+                                        <div class="invalid-feedback">
+                                            Por favor ingrese una ciudad valida.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mb-3">
+                                        <label for="validationCustom04">Provincia</label>
+                                        <select class="custom-select" id="validationCustom04" required>
+                                      <option selected disabled value="">Seleccione...</option>
+                                      <option>...</option>
+                                    </select>
+
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                        <label for="validationCustom03">Email</label>
+                                        <input type="text" class="form-control" id="validationCustom03" required>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="col-md-12 mb-3">
+                                        <label for="validationTextarea">Mensaje</label>
+                                        <textarea class="form-control" id="validationTextarea" placeholder="Escriba aqui su mensaje" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                        <label class="form-check-label" for="invalidCheck">
+                                      Acepto los terminos y condiciones.
+                                    </label>
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" type="submit">Enviar</button>
+                            </form>
+                            <p onclick="mostrarCondiciones()"><a class="alert alert-light d-flex justify-content-end" id="condiciones">Leer terminos y condiciones</a></p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-md-6 d-flex flex-md-wrap">
+                    <div class="card border border-dark" id="contact">
+                        <div class="card-body">
+                            <h5 class="card-title">Gracias por comunicarse con nosotros!</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Nos pondremos en contacto brevemente</h6>
+                            <br>
+                            <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus tempore libero facere sint repellat possimus maxime dolorem ipsam alias nobis error, eum modi commodi eveniet mollitia molestias veritatis nisi itaque?
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis dolores obcaecati ipsa laborum optio soluta. Unde, ipsam. Saepe laudantium numquam, quod officia quidem magnam, obcaecati quaerat maiores laborum omnis
+                                nobis.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus perferendis laudantium quia ullam inventore doloremque rerum! Beatae accusamus libero id consectetur pariatur vitae est repellat itaque accusantium
+                                dolor! Animi, vitae?
+                            </p>
+                            <br>
+                            <h3>Tu Fui, Ego Eris ~ </h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="bg-light text-center">
+            <p>@Marcos T. ~</p>
+        </footer>
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+
+</html>
