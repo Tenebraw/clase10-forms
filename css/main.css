@@ -1,81 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 5px 0 10px 0;
+}
+
 body {
-    font-family: 'Special Elite', cursive;
-    background-image: radial-gradient(circle, #bdc3c7 0%, #2c3e50 100%);
+    font-family: 'Lato', sans-serif;
+    background: radial-gradient(ellipse at center, #1B2735 10%, #090A0F 100%);
+}
+
+.settings {
+    height: 73px;
+}
+
+.fa-lg {
+    font-size: 1.4em;
+    color: aliceblue;
+}
+
+.fas {
+    position: relative;
+    width: 55px;
+    height: 36px;
+    text-align: center;
+    top: 10px;
+    font-size: 20px;
+}
+
+.main-menu:hover {
+    width: 200px;
+    overflow: hidden;
+    opacity: 1;
+}
+
+.main-menu {
+    margin-top: 100px;
+    margin-left: 25px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    width: 55px;
+    overflow: hidden;
+    -webkit-transition: width .2s linear;
+    transition: width .2s linear;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    transform: translateZ(0) scale(1, 1);
+    box-shadow: 1px 0 15px rgba(0, 0, 0, 0.07);
+    opacity: 1;
+}
+
+img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.main-menu>ul {
+    margin: 7px 0;
+}
+
+.main-menu li {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.main-menu li>a {
+    position: relative;
+    width: 250px;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: #cfd2cd;
+    font-size: 13px;
+    text-decoration: none;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    transform: translateZ(0) scale(1, 1);
+    -webkit-transition: all .14s linear;
+    transition: all .14s linear;
+    font-family: 'Strait', sans-serif;
+    border-top: 1px solid #10161e;
+}
+
+.main-menu .nav-text {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 190px;
+}
+
+.share {
+    position: absolute;
+    margin-top: 4px;
+    margin-left: 56px;
+    top: 3px;
+}
+
+a {
+    padding-right: 10px;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    border-left: 0px solid #F7F7F7;
+}
+
+a:hover {
+    color: #261d1d;
+}
+
+nav ul,
+nav li {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+}
+
+.darkerli {
+    text-transform: capitalize;
+}
+
+.darkerlishadow {
+    background-color: #343434;
+    text-transform: capitalize;
+    -webkit-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow: inset 0px 5px 5px -4px rgba(50, 50, 50, 0.55);
+    box-shadow: inset 0px 5px 5px -4px rgba(14, 18, 26);
+}
+
+.darkerlishadowdown {
+    background-color: #ededed;
+    text-transform: capitalize;
+    -webkit-box-shadow: inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow: inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+    box-shadow: inset 0px -4px 5px -4px rgba(50, 50, 50, 0.55);
+}
+
+.main-menu li:hover>a,
+.dashboard-page ul li:hover a,
+.dashboard-page ul li.active a {
+    color: #fff;
+    background-color: #ef4644;
+    text-shadow: 0px 0px 0px;
+}
+
+.area {
+    float: left;
+    background: #e2e2e2;
+    width: 100%;
+    height: 100%;
+}
+
+.barra {
+    font-family: 'Lato', sans-serif;
 }
 
 h3 {
     text-align: end;
 }
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box !important;
+
+/*Prestar atencion siempre al orden. Webkit es sensible a esto, de lo contrario en algunos navegadores algunos efectos podrian fallar.*/
+
+h1 {
+    background: -webkit-linear-gradient(white, #38495a);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 500;
+    letter-spacing: 10px;
+    -webkit-text-fill-color: transparent;
 }
 
-body {
-    display: table;
+.slide {
+    height: 550px;
+}
+
+#content {
+    position: fixed;
+    width: 70%;
+    z-index: 500;
+}
+
+.bg-dark {
+    padding-top: 1px;
+    height: 80%;
+    position: fixed;
+}
+
+#condiciones:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+
+.maximo {
+    font-size: small;
+}
+
+.lesson {
+    font-size: 1em;
+    opacity: 0.3;
+}
+
+.credito {
+    display: grid;
+    justify-content: end;
+}
+
+.contact1 {
+    background-color: #cfd2cd;
+}
+
+.ayuda {
+    margin-left: 47px;
+    margin-right: 47px;
+    background-color: #cfd2cd;
+}
+
+footer {
+    margin-top: 30px;
+}
+
+.error {
     width: 100%;
-    height: 100%;
-    background-color: #171717;
-    color: #000;
-    line-height: 1.6;
+    padding: 0;
+    font-size: 80%;
+    color: white;
+    background-color: #ef4644;
+    border-radius: 0 0 5px 5px;
+    box-sizing: border-box;
+}
+
+.error.active {
+    padding: 0.3em;
+}
+
+.carousel-inner>.item {
     position: relative;
-    overflow: hidden;
+    max-height: 650px;
 }
 
-.lines {
+.carousel-caption {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    margin: auto;
-    width: 90vw;
+    top: 74%;
+    transform: translateY(-50%);
 }
 
-.line {
-    position: absolute;
-    width: 1px;
-    height: 100%;
-    top: 0;
-    left: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    overflow: hidden;
+.jenny {
+    top: 74%;
+}
+
+.micha {
+    top: 71%;
+}
+
+.dihaze {
+    top: 55%;
+}
+
+.natalia {
+    top: 75%;
+}
+
+.julie {
+    top: 52%;
+}
+
+.carousel-indicators {
+    top: 530px;
 }
 
 
-/* &::after
-      content: ''
-      display: block
-      position: absolute
-      height: 15vh
-      width: 100%
-      top: -50%
-      left: 0
-      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #ffffff 75%, #ffffff 100%)
-      animation: run 7s 0s infinite
-      animation-fill-mode: forwards
-      animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97)
-    &:nth-child(1)
-      margin-left: -25%
-      &::after
-        animation-delay: 2s
-    &:nth-child(3)
-      margin-left: 25%
-      &::after
-        animation-delay: 2.5s*/
+/* Extra small devices (portrait phones, less than 576px)*/
 
+@media (max-width: 575px) {
+    .main-menu {
+        margin-left: -10px;
+        width: 45px;
+        z-index: 15;
+    }
+    .bg-dark {
+        position: absolute;
+        height: 100%;
+    }
+    h1 {
+        font-size: 18px;
+        justify-content: center;
+        margin-left: 10px;
+        display: flex;
+    }
+    .slide {
+        height: auto;
+        width: auto;
+    }
+    .caroulse-control-prev-icon {
+        margin-right: -18px;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-caption>p {
+        visibility: hidden;
+    }
+    .micha {
+        margin-top: -15px;
+    }
+}
 
-/*@keyframes run
-  0%
-    top: -50%
-  100%
-    top: 110%*/
+@media (min-width: 576px) and (max-width: 767px) {
+    .main-menu {
+        margin-left: -10px;
+        width: 45px;
+        z-index: 15;
+    }
+    .carousel-indicators {
+        display: none;
+    }
+    .carousel-caption>p {
+        visibility: hidden;
+    }
+}
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .main-menu {
+        margin-left: 0px;
+        z-index: 15;
+    }
+}
 
-/* @media (max-width: 600px)
-   .wrapper
-     padding: 0 10%*/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .main-menu {
+        z-index: 15;
+    }
+}
+
+@media (min-width: 1200px) {
+    .main-menu {
+        z-index: 15;
+    }
+}

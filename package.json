@@ -11,5 +11,10 @@
     "url": "(https://github.com/Tenebraw/clase10-forms.git)"
   },
   "author": "Marcos T.",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.0",
+    "bootstrap": "^4.5.0",
+    "font-awesome": "^4.7.0"
+  }
 }
