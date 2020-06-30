@@ -1,5 +1,5 @@
 # clase10-forms
-Clase de Practica de r/argentina programa. Formularios, boostrap, node. Futuro portfolio.
+<h3>Clase de Practica de r/argentina programa. Formularios, boostrap, node. Futuro portfolio.</h3>
 
 Instalacion: 
 - Ejecutar npm install.
